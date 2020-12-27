@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(void)
+{
+float a,b,c;
+printf("a = ");
+scanf ("%f", &a);
+printf("b = ");
+scanf ("%f", &b);
+printf("c = ");
+scanf ("%f", &c);
+if ((a<b+c) & (b<a+c) & (c<a+b))
+{
+printf("Существует треугольник со сторонами a, b, c");
+}
+else
+{
+printf("Не существует треугольник со сторонами a, b, c");
+}
+return 0;
+}
