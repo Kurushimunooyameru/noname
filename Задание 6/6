@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(void)
+{
+float A;
+printf("A = ");
+scanf ("%d", &A);
+float tempA;
+tempA = A*A;
+printf("A^2:%d\n",tempA);
+tempA =tempA*tempA;
+printf("A^4:%d\n",tempA);
+tempA =tempA*tempA;
+printf("A^8:%d\n",tempA);
+return 0;
+}
