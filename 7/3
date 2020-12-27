@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(void)
+{
+float X,A,Y,l;
+printf("X = ");
+scanf ("%f", &X);
+printf("A = ");
+scanf ("%f", &A);
+printf("Y = ");
+scanf ("%f", &Y);
+l=A/X;
+printf("l = %f\n",l);
+printf("Y*l = %f\n",Y*l);
+return 0;
+}
