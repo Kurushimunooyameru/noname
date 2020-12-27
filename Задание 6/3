@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(void)
+{
+float A,B,C;
+printf("A = ");
+scanf ("%d", &A);
+printf("B = ");
+scanf ("%d", &B);
+printf("C = ");
+scanf ("%d", &C);
+A=A+C;
+C=A-C;
+A=A-C;
+B=B+A;
+A=B-A;
+B=B-A;
+printf("\nA:%d\nB:%d\nC:%d\n",A,B,C);
+return 0;
+}
