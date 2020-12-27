@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(void)
+{
+int x;
+printf("x = ");
+scanf ("%i", &x);
+printf("%d\n",(x>9) & (x<100) & (x%2==0));
+return 0;
+}
