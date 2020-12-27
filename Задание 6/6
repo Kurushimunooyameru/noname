@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+float A;
+printf("A = ");
+scanf("%f", &A);
+float x;
+x = A*A;
+x =x*x;
+x =x*x;
+printf("A^8 = %f\n",x);
+ return 0;
+}
