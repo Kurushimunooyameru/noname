@@ -1,0 +1,12 @@
+int main(void)
+{
+float A, B;
+printf("A = ");
+scanf ("%f", &A);
+printf("B = ");
+scanf ("%f", &B);
+if (A!=B) A=B=A+B;
+else A=B=0;
+printf("A =  %f\n B =  %f\n",A,B);
+return 0;
+}
