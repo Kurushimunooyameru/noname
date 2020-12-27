@@ -1,0 +1,30 @@
+#include "stdio.h" 
+#include "locale.h" 
+#include <math.h>
+int main(void)
+{
+    int a, b, S, P, d,k,sum,dif,prod,quo,sum1,dif1,prod1,quo1;
+    float L, p = 3.14;
+    printf("a = ");
+    scanf_s("%d", &a);
+    printf("b = ");
+    scanf_s("%d", &b);
+    printf("d = ");
+    scanf_s("%d", &d);
+    S = a * b;
+    P = 2 * (a + b);
+    L = p * d;
+    k = (a + b) / 2;
+    printf("S = %d\nP = %d\n", S, P);
+    printf("L = %.2f\n", L);
+    printf("k = %d\n", k);
+    printf("sum = %d\n", a * a + b * b);
+    printf("dif = %d\n", a * a - b * b);
+    printf("prod = %d\n", a * a * b * b);
+    printf("quo = %d\n", (a * a) / (b * b));
+    printf("sum1 = %d\n", abs(a) + abs(b));
+    printf("dif1 = %d\n", abs(a) - abs(b));
+    printf("prod1 = %d\n", abs(a) * abs(b));
+    printf("quo1 = %d\n", abs(a) / abs(b));
+    return 0;
+}
