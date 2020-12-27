@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(void)
+{
+float x;
+printf("x = ");
+scanf ("%d", &x);
+float y=4*(x-3)*(x-3)*(x-3)*(x-3)*(x-3)*(x-3)-7*(x-3)*(x-3)*(x-3)+2;
+printf("y = %d\n",y);
+return 0;
+}
