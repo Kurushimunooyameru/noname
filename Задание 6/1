@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+float A,B;
+printf("A = ");
+scanf ("%d", &A);
+printf("B = ");
+scanf ("%d", &B);
+A=A+B;
+B=A-B;
+A=A-B;
+printf("\nA:%f\nB:%d\n",A,B);
+return 0;
+}
