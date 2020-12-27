@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(void)
+{
+float A;
+printf("A = ");
+scanf ("%f", &A);
+float x,x1;
+x = A*A;
+x1=x*A;
+x =x*x1;
+x1 =x*x;
+x =x1*x;
+printf("A^15 = %f\n",x);
+return 0;
+}
