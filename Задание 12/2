@@ -1,0 +1,65 @@
+#include <iostream>
+int main(void)
+{
+    int x;
+    char y;
+    printf("Направление:");
+    scanf_s("%c", &y);
+    printf("Команда:");
+    scanf_s("%i", &x);
+
+    switch (y) {
+    case 'С':
+        switch (x) {
+        case 1:
+            y = 'З';
+            break;
+        case 0:
+            y = 'С';
+            break;
+        case -1:
+            y = 'В';
+            break;
+        }
+        break;
+    case 'В':
+        switch (x) {
+        case 1:
+            y = 'С';
+            break;
+        case 0:
+            y = 'В';
+            break;
+        case -1:
+            y = 'Ю';
+            break;
+        }
+    case 'Ю':
+        switch (x) {
+        case 1:
+            y = 'В';
+            break;
+        case 0:
+            y = 'Ю';
+            break;
+        case -1:
+            y = 'З';
+            break;
+        }
+        break;
+    case 'З':
+        switch (x) {
+        case 1:
+            y = 'Ю';
+            break;
+        case 0:
+            y = 'З';
+            break;
+        case -1:
+            y = 'С';
+            break;
+        }
+    }
+    printf("%c\n", y);
+    return 0;
+}
