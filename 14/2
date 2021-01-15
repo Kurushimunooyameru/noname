@@ -1,0 +1,16 @@
+#include <iostream>
+int main(void)
+{
+    int a, b;
+    printf("A = ");
+    scanf("%i", &a);
+    printf("B = ");
+    scanf("%i", &b);
+    int m = a;
+    while (m >= 0) 
+    {
+        m -= b;
+    }
+    printf("%i\n ", m + b);
+    return 0;
+}
