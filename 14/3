@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    printf("N = ");
+    scanf("%i", &n);
+    int k = 0, m = 0;
+    while (m < n) 
+    {
+        ++k;
+        m += 3;
+    }
+    printf("K = %i\nСумма = %i\n", k, m);
+    return 0;
+}
