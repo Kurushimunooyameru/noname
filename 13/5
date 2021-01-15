@@ -1,0 +1,19 @@
+#include <iostream>
+int main(void)
+{
+    float a;
+    printf("A = ");
+    scanf("%f", &a);
+    int n;
+    printf("N = ");
+    scanf("%i", &n);
+    float y = 1, x = 1;
+    int i;
+    for (i = 2; i <= n; ++i)
+    {
+        y *= -a;
+        x += y;
+    }
+    printf("%f \n ", x);
+    return 0;
+}
