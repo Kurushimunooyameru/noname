@@ -1,0 +1,15 @@
+#include <iostream>
+int main(void)
+{
+    int a, b;
+    printf("A = ");
+    scanf("%i", &a);
+    printf("B = ");
+    scanf("%i", &b);
+    int x, y;
+    for (x = a; x <= b; ++x) {
+        for (y = 1; y <= x; ++y) printf("%i ", x);
+        printf("\n");
+    }
+    return 0;
+}
