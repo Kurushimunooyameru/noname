@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(void)
+{
+    int a[10];
+    int n;
+    printf("N = ");
+    scanf("%i", &n);
+    int i;
+    for (i = 0; i < n; ++i) {
+        printf("a[%i] = ", i + 1);
+        scanf("%i", &a[i]);
+    }
+    int i1;
+    for (i = 0; i < n - 1; ++i) {
+        for (i1 = i + 1; i1 < n; ++i1) {
+            if (a[i] == a[i1]) {
+                printf("%i %i\n", i + 1, i1 + 1);
+            }
+        }
+    }
+
+    return 0;
+}
