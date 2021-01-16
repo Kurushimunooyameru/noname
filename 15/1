@@ -1,0 +1,19 @@
+#include <stdio.h>
+void PowerA3(float a, float* b)
+{
+    *b = a * a * a;
+}
+int main(void)
+{
+    int i;
+    for (i = 1; i <= 5; ++i)
+    {
+        float a;
+        printf("A = ");
+        scanf("%f", &a);
+        float b;
+        PowerA3(a, &b);
+        printf("B = %f\n", b);
+    }
+    return 0;
+}
